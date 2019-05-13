@@ -49,7 +49,7 @@ public class MergeSorter extends Sorter {
 
 			// 8. while i is less than or equal to middle
 			// and j is less than or equal to high
-			while (i <= mid && j <= high) {
+			while ( ( i <= mid ) && ( j <= high ) ) {
 
 				// 9. if temp array at i is less than or equal
 				// to temp array at j
@@ -70,17 +70,17 @@ public class MergeSorter extends Sorter {
 					// 15. increase j by 1
 					j++;
 
-					// 16. increase k by 1
-					k++;
-
 				}
+				
+                // 16. increase k by 1
+                k++;
 			}
 
 			// 17. make a while loop that runs while i is less than or equal to middle
 			while (i <= mid) {
 
 				// 18. set array at k equal to temp array at i
-				workArray[i] = array[k];
+			    array[k] = workArray[i];
 
 				// 19. increase k and i by 1
 				k++;
